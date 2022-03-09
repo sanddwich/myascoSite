@@ -12,7 +12,7 @@ class MainHeader extends React.Component<MainHeaderProps, MainHeaderState> {
   render() {
     return (
       <Container fluid className="MainHeader p-0">
-        <h1>MainHeader</h1>        
+        {/* <h1>MainHeader</h1>         */}
       </Container>
     )
   }
