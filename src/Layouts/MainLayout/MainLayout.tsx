@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { Redirect, Route, Switch } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import MainBody from './MainBody/MainBody'
 import MainFooter from './MainFooter/MainFooter'
 import MainHeader from './MainHeader/MainHeader'
@@ -18,12 +18,12 @@ class MainLayout extends React.Component<MainLayoutProps, MainLayoutState> {
       <Container fluid className="MainLayout p-0">
         <MainHeader />
         <MainBody>
-          <Switch>
-            <Route path="/" exact component={Main} />
-            <Route path="/second" exact component={Second} />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/second" element={<Second />} />
 
-            <Redirect to="/" />
-          </Switch>
+            <Route path="*" element={<Main />} />
+          </Routes>
         </MainBody>
 
         <MainFooter />

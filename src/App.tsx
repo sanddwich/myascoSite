@@ -1,7 +1,6 @@
 import './App.scss'
 import { Container } from 'react-bootstrap'
-import { Route, Switch } from 'react-router-dom'
-import AdminLayout from './Layouts/AdminLayout/AdminLayout'
+import { Route, Routes } from 'react-router-dom'
 import MainLayout from './Layouts/MainLayout/MainLayout'
 import { connect } from 'react-redux'
 import { RootState } from './Redux'
@@ -28,10 +27,10 @@ const App = (props: AppProps) => {
       {props.modal.mobileMenu.isActive && <MobileMenu />}
       {props.toast.isActive && <ToastComponent />}
 
-      <Switch>
-        <Route path="/admin" component={AdminLayout} />
-        <Route path="/" component={MainLayout} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<MainLayout />} />
+        <Route path="*" element={<MainLayout />} />
+      </Routes>
     </Container>
   )
 }
