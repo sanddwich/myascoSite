@@ -3,6 +3,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap');
 @import 'animate.css/animate.min.css';
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/gilroy-black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/gilroy-bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'TTNorms';
+  src: url('./fonts/TTNorms-Medium.otf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'TTNorms';
+  src: url('./fonts/TTNorms-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
 html,
 body {
   height: 100%;
